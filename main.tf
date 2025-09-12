@@ -33,16 +33,18 @@ variable "static_ips" {
   type = map(string)
   default = {
     "k8smaster1" = "10.0.0.131"
-    "k8sworker1" = "10.0.0.132"
-    "k8sworker2" = "10.0.0.133"
+    "k8smaster2" = "10.0.0.132"
+    "k8sworker1" = "10.0.0.133"
+    "k8sworker2" = "10.0.0.134"
   }
 }
 
 locals {
   nodes = {
     "k8smaster1" = { role = "master", cpu = 2, memory_mb = 8192 }
-    "k8sworker1" = { role = "worker", cpu = 2, memory_mb = 4096 }
-    "k8sworker2" = { role = "worker", cpu = 2, memory_mb = 4096 }
+    "k8smaster2" = { role = "master", cpu = 2, memory_mb = 8192 }
+    "k8sworker1" = { role = "worker", cpu = 2, memory_mb = 8192 }
+    "k8sworker2" = { role = "worker", cpu = 2, memory_mb = 8192 }
   }
 }
 
