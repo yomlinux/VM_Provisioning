@@ -6,7 +6,7 @@ vsphere_server   = "10.0.0.120"
 # ------------------ Datacenter & Host ------------------
 dc_name        = "DNIXX"
 esxi_host_name = "10.0.0.121"      # Standalone ESXi host
-datastore_name = "proddata1"
+datastore_name = "proddata"
 network_name   = "VM Network"
 
 # ------------------ VM Template ------------------
