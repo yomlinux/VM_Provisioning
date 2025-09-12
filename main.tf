@@ -36,6 +36,8 @@ variable "static_ips" {
     "k8smaster2" = "10.0.0.132"
     "k8sworker1" = "10.0.0.133"
     "k8sworker2" = "10.0.0.134"
+    "dnixxnfs"   = "10.0.0.135"
+     
   }
 }
 
@@ -45,6 +47,7 @@ locals {
     "k8smaster2" = { role = "master", cpu = 2, memory_mb = 8192 }
     "k8sworker1" = { role = "worker", cpu = 2, memory_mb = 8192 }
     "k8sworker2" = { role = "worker", cpu = 2, memory_mb = 8192 }
+    "dnixxnfs"   = { role = "worker", cpu = 2, memory_mb = 4096 }
   }
 }
 
