@@ -16,10 +16,9 @@ vm_domain     = "dnixx.comm"
 # ------------------ Kubernetes Node IPs ------------------
 static_ips = {
   "k8smaster1" = "10.0.0.131"
-  "k8smaster2" = "10.0.0.132"
-  "k8sworker1" = "10.0.0.133"
-  "k8sworker2" = "10.0.0.134"
-  "dnixxnfs"   = "10.0.0.135"
+  "k8sworker1" = "10.0.0.132"
+  "k8sworker2" = "10.0.0.133"
+  "dnixxnfs"   = "10.0.0.134"
 }
 
 
