@@ -18,7 +18,6 @@ static_ips = {
   "k8smaster1" = "10.10.10.131"
   "k8sworker1" = "10.10.10.132"
   "k8sworker2" = "10.10.10.133"
-  "dnixxnfs"   = "10.10.10.134"
 }
 
 
