@@ -5,7 +5,7 @@ vsphere_server   = "10.0.0.120"
 
 # ------------------ Datacenter & Host ------------------
 dc_name        = "DNIXX"
-esxi_host_name = "10.0.0.121"      # Standalone ESXi host
+esxi_host_name = "10.10.10.121"      # Standalone ESXi host
 datastore_name = "proddata"
 network_name   = "VM Network"
 
@@ -15,10 +15,10 @@ vm_domain     = "dnixx.comm"
 
 # ------------------ Kubernetes Node IPs ------------------
 static_ips = {
-  "k8smaster1" = "10.0.0.131"
-  "k8sworker1" = "10.0.0.132"
-  "k8sworker2" = "10.0.0.133"
-  "dnixxnfs"   = "10.0.0.134"
+  "k8smaster1" = "10.10.10.131"
+  "k8sworker1" = "10.10.10.132"
+  "k8sworker2" = "10.10.10.133"
+  "dnixxnfs"   = "10.10.10.134"
 }
 
 
