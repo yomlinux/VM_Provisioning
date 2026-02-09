@@ -1,7 +1,7 @@
 # ------------------ vSphere Credentials ------------------
 vsphere_user     = "administrator@dnixx.comm"
 vsphere_password = "P@ssw0rd123"
-vsphere_server   = "10.0.0.120"
+vsphere_server   = "10.10.10.120"
 
 # ------------------ Datacenter & Host ------------------
 dc_name        = "DNIXX"
