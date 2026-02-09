@@ -18,10 +18,10 @@ provider "vsphere" {
 # ------------------ Variables ------------------
 variable "vsphere_user"     { default = "administrator@dnixx.comm" }
 variable "vsphere_password" { sensitive = true }
-variable "vsphere_server"   { default = "10.0.0.120" }
+variable "vsphere_server"   { default = "10.10.10.120" }
 
 variable "dc_name"          { default = "DNIXX" }
-variable "esxi_host_name"   { default = "10.0.0.121" } # standalone ESXi host
+variable "esxi_host_name"   { default = "10.10.10.121" } # standalone ESXi host
 variable "datastore_name"   { default = "proddata1" }
 variable "network_name"     { default = "VM Network" }
 
@@ -32,10 +32,10 @@ variable "vm_domain"        { default = "dnixx.comm" }
 variable "static_ips" {
   type = map(string)
   default = {
-    "k8smaster1" = "10.0.0.131"
-    "k8sworker1" = "10.0.0.132"
-    "k8sworker2" = "10.0.0.133"
-    "dnixxnfs"   = "10.0.0.134"
+    "k8smaster1" = "10.10.10.131"
+    "k8sworker1" = "10.10.10.132"
+    "k8sworker2" = "10.10.10.133"
+    "dnixxnfs"   = "10.10.10.134"
      
   }
 }
@@ -113,7 +113,7 @@ resource "vsphere_virtual_machine" "k8s" {
         ipv4_netmask = 24
       }
 
-      ipv4_gateway = "10.0.0.1"
+      ipv4_gateway = "10.10.10.1"
     }
   }
 }
