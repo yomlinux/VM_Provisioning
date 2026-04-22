@@ -6,11 +6,11 @@ vsphere_server   = "10.10.10.120"
 # ------------------ Datacenter & Host ------------------
 dc_name        = "DNIXX"
 esxi_host_name = "10.10.10.121"      # Standalone ESXi host
-datastore_name = "proddata"
+datastore_name = "proddata1"
 network_name   = "VM Network"
 
 # ------------------ VM Template ------------------
-template_path = "/DNIXX/vm/test"   # Path to your Rocky Linux 8 template
+template_path = "/DNIXX/vm/Image1_Template"   # Path to your Rocky Linux 8 template
 vm_domain     = "dnixx.comm"
 
 # ------------------ Kubernetes Node IPs ------------------
