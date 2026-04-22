@@ -25,7 +25,7 @@ variable "esxi_host_name"   { default = "10.10.10.121" } # standalone ESXi host
 variable "datastore_name"   { default = "proddata1" }
 variable "network_name"     { default = "VM Network" }
 
-variable "template_path"    { default = "/DNIXX/vm/test" }
+variable "template_path"    { default = "/DNIXX/vm/Image1_Template" }
 variable "vm_domain"        { default = "dnixx.comm" }
 
 # Static IPs for VMs
