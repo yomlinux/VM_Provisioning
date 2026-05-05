@@ -10,7 +10,7 @@ datastore_name = "proddata1"
 network_name   = "VM Network"
 
 # ------------------ VM Template ------------------
-template_path = "/DNIXX/vm/Image1_Template"   # Path to your Rocky Linux 8 template
+template_path = "/DNIXX/vm/Image1"   # Path to your Rocky Linux 8 template
 vm_domain     = "dnixx.comm"
 
 # ------------------ Kubernetes Node IPs ------------------
